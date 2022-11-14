@@ -32,7 +32,26 @@ paddle_b.goto(350, 0)#This shows swhere our paddle will get started (-350, 0)are
 
 
 #Ball
+ball = turtle.Turtle()#small t for our module name and capital T for our class name
+ball.speed(0)#speed of animation,sets speed to maximum possible speed otherwise things will get slow
+ball.shape("circle")
+ball.color("white")
+ball.penup()#turtles draw lines while moving since we do not need it in our game so we use the function penup to avoid drawing lines
+ball.goto(0, 0)#This shows swhere our paddle will get started (-350, 0)are x and y coordinate respectively
 
+#functions
+def paddle_a_up():
+    y = paddle_a.ycor()
+    y += 20
+    paddle_a.sety(y)
+    
+# Keyboard binding
+win.listen()
+win.onkeypress(paddle_a_up, "w")
+
+    
+    
+    
 #Main game loop
 while True:
     win.update()

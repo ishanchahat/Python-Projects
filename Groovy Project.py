@@ -96,15 +96,7 @@ if __name__ == "__main__":
           
           elif 'my name' in query:
               speak('your name is ishan sir')
-              
-          elif 'say' in query:
-              speak("hello O G and , sourav")
-          
-        #   elif 'open vk' in query:
-        #       os.open("C:\Users\ishan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs")
-              
-          
-          
+                
           elif 'say hi' in query:
               speak('hello everyone namaste i am groovy ishan sir assistant')
               
@@ -121,11 +113,6 @@ if __name__ == "__main__":
           elif 'play music' in query:
               playsound(os.open("https://open.spotify.com/playlist/37i9dQZF1EIUutZ8JokfM0?si=7b9433ba230f4460"))
               
-            
-            #   music_dir = 'C:\\Users\\ishan'
-            #   songs = os.listdir(music_dir)
-            #   print(songs)
-            #   os.startfile(os.path.join(music_dir,songs[0]))
           
           elif 'stop' in query:
               speak("if i will not speak how will you communicate sir. isn't how conversations works")    
@@ -139,15 +126,7 @@ if __name__ == "__main__":
               codepath = "C:\\Users\\ishan\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
               os.startfile(codepath)
             
-        #elif 'email to pranjal' in query:
-        #try:
-        #speak("What Should I Say?")
-        #content = takeCommand()
-        #to= "yourEmail@gmail.com"
-        #sendEmail(to, content)
-        #speak("Email has been sent!")
-        #except Exception as e:
-        #speak("Sorry Ishan Sir. I am not able to send this email")
+
                   
 
           

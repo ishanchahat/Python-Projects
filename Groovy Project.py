@@ -5,6 +5,7 @@ import datetime
 import wikipedia
 import webbrowser
 import os
+import playsound
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -88,7 +89,7 @@ if __name__ == "__main__":
               webbrowser.open("https://www.youtube.com/")
           
           elif 'open google' in query:
-              webbrowser.open("https://www.google.co.in/")
+              webbrowser.open("https://www.linkedin.com/in/ishan-pandey-081290227/")
           
           elif 'open stackoverflow' in query:
               webbrowser.open("https://stackoverflow.com/")
@@ -98,6 +99,9 @@ if __name__ == "__main__":
               
           elif 'say' in query:
               speak("hello O G and , sourav")
+          
+        #   elif 'open vk' in query:
+        #       os.open("C:\Users\ishan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs")
               
           
           
@@ -115,10 +119,13 @@ if __name__ == "__main__":
                   
               
           elif 'play music' in query:
-              music_dir = 'C:\\Users\\ishan'
-              songs = os.listdir(music_dir)
-              print(songs)
-              os.startfile(os.path.join(music_dir,songs[0]))
+              playsound(os.open("https://open.spotify.com/playlist/37i9dQZF1EIUutZ8JokfM0?si=7b9433ba230f4460"))
+              
+            
+            #   music_dir = 'C:\\Users\\ishan'
+            #   songs = os.listdir(music_dir)
+            #   print(songs)
+            #   os.startfile(os.path.join(music_dir,songs[0]))
           
           elif 'stop' in query:
               speak("if i will not speak how will you communicate sir. isn't how conversations works")    

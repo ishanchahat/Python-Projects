@@ -38,6 +38,9 @@ ball.shape("circle")
 ball.color("white")
 ball.penup()#turtles draw lines while moving since we do not need it in our game so we use the function penup to avoid drawing lines
 ball.goto(0, 0)#This shows swhere our paddle will get started (-350, 0)are x and y coordinate respectively
+ball.dx = 0.2#This indicates from how many pixels does tha ball will move in x-axis
+ball.dy = -0.2#This indicates from how many pixels does tha ball will move in y-axis
+
 
 #functions
 def paddle_a_up():
@@ -45,14 +48,59 @@ def paddle_a_up():
     y += 20
     paddle_a.sety(y)
     
+def paddle_a_down():
+    y = paddle_a.ycor()
+    y -= 20
+    paddle_a.sety(y)
+    
+    
+def paddle_b_up():
+    y = paddle_b.ycor()
+    y += 20
+    paddle_b.sety(y)
+    
+def paddle_b_down():
+    y = paddle_b.ycor()
+    y -= 20
+    paddle_b.sety(y)
+
 # Keyboard binding
 win.listen()
 win.onkeypress(paddle_a_up, "w")
-
-    
+win.onkeypress(paddle_a_down, "s")
+win.onkeypress(paddle_b_up, "Up")
+win.onkeypress(paddle_b_down, "Down")    
     
     
 #Main game loop
 while True:
     win.update()
+    
+    #Move the ball
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+    
+    # Border Checking
+    
+    #Top border
+    if ball.ycor() > 290:
+        ball.sety(290)
+        ball.dy *= -1  #For reversing the direction of the ball
+    #Bottom border    
+    if ball.ycor() < -290:
+        ball.sety(-290)
+        ball.dy *= -1
+    #Right corner    
+    if ball.xcor() > 390:
+        ball.goto(0,0)
+        ball.dx *=-1
+        
+    #Left corner    
+    if ball.xcor() < -390:
+        ball.goto(0,0)
+        ball.dx *=-1
+    
+   
+        
+
     

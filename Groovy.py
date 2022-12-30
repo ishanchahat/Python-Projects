@@ -125,10 +125,3 @@ if __name__ == "__main__":
           elif 'open code' in query:
               codepath = "C:\\Users\\ishan\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
               os.startfile(codepath)
-            
-
-                  
-
-          
-              
-  

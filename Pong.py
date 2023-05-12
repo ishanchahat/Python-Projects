@@ -32,7 +32,7 @@ paddle_b.goto(350, 0)#This shows swhere our paddle will get started (-350, 0)are
 
 #Ball
 ball = turtle.Turtle()#small t for our module name and capital T for our class name
-ball.speed(2)#speed of animation,sets speed to maximum possible speed otherwise things will get slow
+ball.speed(0)#speed of animation,sets speed to maximum possible speed otherwise things will get slow
 ball.shape("circle")
 ball.color("white")
 ball.penup()#turtles draw lines while moving since we do not need it in our game so we use the function penup to avoid drawing lines
@@ -123,11 +123,3 @@ while True:
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() +40 and ball.ycor() > paddle_a.ycor() -40): # for middle contact of the paddle and for only one touch contact 
         ball.setx(-340)
         ball.dx *= -1
-        
-        
-
-    
-   
-        
-
-    

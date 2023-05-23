@@ -1,0 +1,5 @@
+For creating .py files to .exe files we can use the following command in command prompt
+
+
+cd Location   //location where the python files is located
+pyinstaller --onefile filename.py   //for conversion of .py to .exe

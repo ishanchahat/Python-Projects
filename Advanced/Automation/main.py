@@ -18,8 +18,8 @@ from watchdog.events import FileSystemEventHandler
 source_dir = r"C:\Users\ishan\Downloads"
 dest_dir_sfx = r"C:\Users\ishan\Desktop\SFX"
 dest_dir_music = r"C:\Users\ishan\Desktop\Image"
-dest_dir_video = r"C:\Users\ishan\Desktop\Video"
-dest_dir_image = r"C:\Users\ishan\Desktop\Image"
+dest_dir_video = r"C:\Users\ishan\Google Drive\Video"   
+dest_dir_image = r"C:\Users\ishan\Google Drive\Image"
 dest_dir_documents = r"C:\Users\ishan\OneDrive\Documents"
 
 image_extensions = [".jpg", ".jpeg", ".jpe", ".jif", ".jfif", ".jfi", ".png", ".gif", ".webp", ".tiff", ".tif", ".psd", ".raw", ".arw", ".cr2", ".nrw",
